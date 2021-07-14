@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Maintain - Viblo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato:400,700"
+            rel="stylesheet"
+        />
+
+        <style>
+            body {
+                background-color: #c5ddfb;
+            }
+
+            .container {
+                text-align: center;
+                padding: 0 15px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            .msg {
+                margin-top: 5rem;
+            }
+
+            .msg span {
+                display: block;
+            }
+
+            #msg__upper {
+                color: rgba(107, 113, 123, 255);
+                font-weight: 500;
+            }
+
+            #msg__lower {
+                color: rgba(84, 136, 199, 255);
+                font-weight: bold;
+            }
+
+            #image {
+                position: absolute;
+                bottom: 5rem;
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100vh;
+            }
+
+            #image img {
+                max-width: 100%;
+                display: block;
+                max-height: 60vh;
+            }
+
+            @media (min-width: 576px) {
+                .container {
+                    max-width: 540px;
+                }
+
+                #msg__upper {
+                    font-size: 1.5rem;
+                }
+
+                #msg__lower {
+                    font-size: 4rem;
+                }
+            }
+
+            @media (min-width: 768px) {
+                .container {
+                    max-width: 720px;
+                }
+            }
+
+            @media (min-width: 992px) {
+                .container {
+                    max-width: 960px;
+                }
+
+                #msg__upper {
+                    font-size: 2.5rem;
+                }
+
+                #msg__lower {
+                    font-size: 5.5rem;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .container {
+                    max-width: 1140px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="msg">
+                <span id="msg__upper">WE ARE UNDER</span>
+                <span id="msg__lower">MAINTENCE</span>
+            </div>
+            <div id="image">
+                <img src="assets/object.png" alt="Maintain image" />
+            </div>
+        </div>
+    </body>
+</html>
